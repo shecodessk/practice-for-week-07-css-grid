@@ -23,6 +23,7 @@ div {
 
   /* Bonus Phase */
   /* Your code here */
+  grid-row-gap: 15px;
 }
 .item-1 {
   background-color: #87a7b3; /* steel blue */
@@ -56,7 +57,7 @@ div {
 
 .divider {
   background-image: linear-gradient(to right, #e1f1dd, #cdc7be);
-
+  width: 100px;
   /* Bonus Phase */
   /* Your code here */
 }
@@ -69,4 +70,10 @@ div {
 
   /* Phase 2 */
   /* Your code here */
+  display: inline-grid;
+  grid-template-columns: repeat(6, 100px);
+  grid-template-rows: repeat(3, 50px);
+  grid-auto-flow: column;
+  justify-items: center;
+  align-items: center;
 }
